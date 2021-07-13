@@ -117,6 +117,13 @@ nav a {
 
 .player-name {
     margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.about-player {
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -162,4 +169,45 @@ nav a {
 .photo-frame:hover .photo {
     transform: scale(1.2);
     transition: transform 1s ease-in-out;
+}
+
+
+/* video styles start  */
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+
+.video iframe {
+    border-radius: 5px;
+    justify-content: space-evenly;
+}
+
+
+/* footer styles start  */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 63px;
+}
+
+footer img {
+    width: 483.87px;
+}
+
+footer i {
+    width: 32px;
+    height: 32px;
+    margin-right: 14px;
+}
+
+footer>small {
+    font-weight: 400;
+    font-size: 18px;
 }
