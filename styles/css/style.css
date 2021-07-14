@@ -56,6 +56,10 @@ nav a {
     margin-right: 8px;
 }
 
+.lower-part {
+    display: flex;
+}
+
 .title {
     margin: 121px 0 169px 156px;
 }
@@ -63,10 +67,6 @@ nav a {
 .header-title h1 {
     color: white;
     margin-bottom: 27px;
-}
-
-.lower-part {
-    display: flex;
 }
 
 .fa-arrow-right {
@@ -163,7 +163,7 @@ nav a {
 
 .photo-frame:hover .img-info {
     display: block;
-    background-color: rgba(219, 185, 100, 0.555);
+    background-color: rgba(99, 85, 52, 0.555);
 }
 
 .photo-frame:hover .photo {
@@ -210,4 +210,70 @@ footer i {
 footer>small {
     font-weight: 400;
     font-size: 18px;
+}
+
+
+/*responsive styles for mobiles */
+
+@media only screen and (max-width:688px) {
+    /* header styles  */
+    header {
+        width: 100%;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    nav {
+        display: none;
+    }
+    .lower-part {
+        flex-direction: column;
+    }
+    .title {
+        margin: 112px 66px 50px 16px;
+    }
+    .header-img img {
+        width: 330px;
+        height: 260px;
+        margin: 0 16px 61px 15px;
+    }
+    /* end of header styles  */
+    /* player styles start  */
+    .container {
+        margin: 47px 0 0 0;
+    }
+    .players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* players styles end  */
+    /* photo gallary styles start  */
+    .container>h2 {
+        text-align: center;
+    }
+    .photo-gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /* video styles start  */
+    .videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .video {
+        margin-top: 20px;
+    }
+    /* footer styles  */
+    footer {
+        margin-top: 43px;
+        margin-bottom: 187px;
+    }
+    footer img {
+        width: 300px;
+        margin-top: 0;
+    }
 }
