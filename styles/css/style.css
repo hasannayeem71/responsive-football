@@ -139,8 +139,9 @@ header:hover .header-img {
 }
 
 
-/* player styles end 
- */
+/*------------------
+ player styles end 
+------------------ */
 
 
 /* gallery styles  */
@@ -252,8 +253,12 @@ footer>small {
     header:hover .header-img {
         transform: translateX( -10px);
     }
-    /* end of header styles  */
-    /* player styles start  */
+    /*------------------
+     end of header styles
+     ---------------------  */
+    /*--------------------
+     player styles start 
+     --------------------- */
     .container {
         margin: 47px 0 0 0;
     }
