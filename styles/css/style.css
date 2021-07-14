@@ -43,6 +43,10 @@ nav {
     padding-top: 42px;
 }
 
+.menu-bar {
+    display: none;
+}
+
 nav a {
     margin-right: 36px;
     font-weight: 500;
@@ -76,6 +80,14 @@ nav a {
 .header-img img {
     width: 570.01px;
     margin: 67px 141px 86px 102px;
+}
+
+header:hover .header-img {
+    transform: translateX( -50px);
+}
+
+.header-img {
+    transition: transform 1s ease-in-out;
 }
 
 
@@ -163,7 +175,7 @@ nav a {
 
 .photo-frame:hover .img-info {
     display: block;
-    background-color: rgba(99, 85, 52, 0.555);
+    background-color: rgba(178, 204, 28, 0.555);
 }
 
 .photo-frame:hover .photo {
@@ -236,6 +248,9 @@ footer>small {
         width: 330px;
         height: 260px;
         margin: 0 16px 61px 15px;
+    }
+    header:hover .header-img {
+        transform: translateX( -10px);
     }
     /* end of header styles  */
     /* player styles start  */
